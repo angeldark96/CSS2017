@@ -1,0 +1,80 @@
+.main-nav
+
+{
+  background: $primary-color;
+
+  @include hasta($x-large)
+{
+    height: 0;
+
+    &.show
+    {
+      height: auto;
+    }
+  }
+
+  @include desde($x-large)
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+.main-menu
+{
+    /*Resetear el menu*/
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  //display: flex;
+
+
+  @include desde($x-large) {
+    display: flex;
+
+  }
+
+
+  &__item
+  {
+    border-bottom:1px solid rgba(#fff,.5);
+
+    @include desde($x-large) {
+      border-bottom:none;
+
+    }
+
+  }
+
+  &__link
+  {
+    display: block;
+    line-height: 3;
+    padding: 0 1em;
+    text-decoration: none;
+    color: #fff;
+
+  }
+}
+/*editar al icono del menu*/
+
+.toggle-menu
+{
+  color: $primary-color;
+  display: table;
+  font-size:1.6em;
+  cursor: pointer;
+  margin-right: auto;
+  margin-left:auto;
+
+  //desde 1024 se va el icono de menu
+  @include desde($x-large) {
+    display: none;
+  }
+
+}
+
+
+

@@ -1,0 +1,66 @@
+//Variables
+
+
+//Paleta de Colores
+
+$primary-color:hsl(205,80,60);
+$secondary-color:hsl(0,10,10);
+//$third-color:hsl(0,10,10);
+
+
+//Tamaños de Fuentes
+
+$xl:24px;
+$l:20px;
+$m:16px;
+$s:13px;
+$xs:11px;
+
+//Varibles de Layaout
+
+$gutter : 16px;
+$max-width:1200px;
+
+//Mixin para media query
+
+@mixin desde($size){
+
+  @media screen and (min-width: $size)
+  {
+    @content;
+  }
+
+}
+
+@mixin hasta($size){
+
+  @media screen and (max-width: $size)
+  {
+    @content;
+  }
+
+}
+
+$small:480px;
+$medium:640px;
+$large:768px;
+$x-large:1024px;
+
+
+
+//Breakpoints
+
+
+@import "base/normalize";
+@import "layout/layout";
+@import "theme/header";
+@import "modules/modules";
+@import "base/base";
+@import "theme/menu";
+@import "theme/banner";
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+.contact-widget
+{
+  display: flex;
+  //centrar el los dos icnos con fondo negro
+  align-items:center;
+
+  &__icon
+  {
+    width: 2em;
+    height: 2em;
+    background: $secondary-color;
+    color: #fff;
+    text-align: center;
+    line-height: 2em;
+    font-size:$xl;
+    //separar los 2 iconos con su container
+
+    margin-left:.7em;
+
+
+    //centrar los botones al medio
+    //del cuadro negro
+    &.button
+    {
+      line-height: 2.3;
+    }
+
+  }
+
+  &__data
+  {
+
+    margin-left: .5em;
+
+
+  }
+
+
+  &__title
+  {
+    margin:0;
+    line-height:1;
+    font-size:$m;
+
+  }
+  &__content
+  {
+    margin:0;
+    font-size:$s;
+  }
+
+}
+
+.button
+{
+  text-decoration: none;
+  line-height:2.7;
+  display: inline-block;
+  padding:0 1em;
+  
+  &--dark
+    {
+      background: $secondary-color;
+      color:#fff;
+    
+    }
+
+  &--light
+  {
+
+    color:  $primary-color;
+    background:#fff;
+
+  }
+
+  &--cta
+  {
+
+    background: $primary-color;
+    color:#fff;
+
+  }
+
+  &--square
+  {
+    //Para que sea cuadrado los botones con fondo negro
+    padding:0;
+  }
+
+}
+
+.social-networks
+{
+  padding-left:1em;
+  a{
+    text-decoration: none;
+    line-height:3;
+    color: #fff;
+    margin-right: .5em;
+  }
+}
+
+
